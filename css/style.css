@@ -1,0 +1,102 @@
+
+html{
+    scroll-behavior: smooth;
+}
+/*start Golbal rules*/
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color:var(--section-background);
+    margin: 0;
+    padding: 0;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+/*smart*/
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/*medium*/
+@media(min-width:992px){
+    .container{
+        width:970px; 
+    }
+}
+/*large*/
+@media( min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+/*End Golbal rules*/
+.card {
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 6px; 
+    overflow: hidden;
+    background-color: #f6f6f6 ;
+    box-shadow: 0 0  10px #ddd;
+}
+.header {
+    background-color: rgb(250, 126, 69);
+    color: #fff;
+    padding: 10px;
+}
+.header h3 {
+    margin: 0 0 10px;
+}
+
+.header p {
+    margin: 0;
+}
+.suggestion {
+    padding: 20px 15px;
+    background-color: #eee;
+}
+.suggestion .click {
+    background-color: rgb(250, 126, 69);
+    width: fit-content;
+    margin-left: auto;
+    border-radius: 4px;
+}
+.suggestion .click a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+.landing .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 50px;
+}
+.landing .content p{
+    margin: 5px 0;
+    color: #777;
+    line-height: 1.6;
+    font-size: 15px;
+}
+.landing .content h4 {
+    margin: 0;
+    text-transform: capitalize;
+}
+.landing .content:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+.count {
+    display: flex;
+    align-items: center;
+    border: 1px solid #777;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+.count i {
+    margin-right: 5px;
+}
